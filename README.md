@@ -24,5 +24,9 @@ RUN_ANALYSIS.R SCRIPT
 11. Created a second dataset from the first that lists the mean of each variable per activity and subject.
 12. This second data set is a "tidy" dataset consisting of one variable measure per column, and one observation of that variable in each row(summarized as the mean). 
 
+DataCleaningProjectDataset.txt and DataCleaningProjectDataset.csv
+
+The final tidy dataset in txt and csv formats providing the mean of each mean and std deviation measure from the source dataset per activity and subject. 
+
 
 
