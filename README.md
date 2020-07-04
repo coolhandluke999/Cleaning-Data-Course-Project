@@ -20,8 +20,9 @@ RUN_ANALYSIS.R SCRIPT
 7. Combined test andt train datasets using rbind().
 8. Create a column names vector from features.txt and add these column names to the dataset.  
 9. Identified columns with mean and(or) std deviation in their name and kept these columns, discarding the rest minus subject and activity.
-10. Renamed activity column records as descriptive "Activity" variables and set these values as factors.
+10. Renamed activity column records as descriptive "Activity" variables (Walking, Walking Upstairs, Walking Downstairs,Sitting, Standing, Laying), as per the activity_labels.txt file, and set these values as factors.
 11. Created a second dataset from the first that lists the mean of each variable per activity and subject.
+12. This second data set is a "tidy" dataset consisting of one variable measure per column, and one observation of that variable in each row(summarized as the mean). 
 
 
 
