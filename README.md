@@ -28,5 +28,9 @@ DataCleaningProjectDataset.txt and DataCleaningProjectDataset.csv
 
 The final tidy dataset in txt and csv formats providing the mean of each mean and std deviation measure from the source dataset per activity and subject. 
 
+CODEBOOK.txt
+
+A text file providing information on study design, summary choices, and a data dictionary for the resulting values in the DataCleaningProjectDataset.txt file. 
+
 
 
