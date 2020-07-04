@@ -1,0 +1,43 @@
+Cleaning Data Course Project
+
+CodeBook
+
+Study Design
+
+Downloaded source dataset from:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Full description of original dataset available at:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Given the source data files were separated by test and train and subject and activty for both test and train all data files were read prior to any joining or merging. The test dataset was deemed the primary dataset and loaded first; followed by the train dataset. This process was followed for all column joins for the subject and train data to ensure the data was properly matched to the appropriate records.
+
+Column Names were assinged from the features.txt file. This created a vector of a number(line number) and the column name value. The line numbers were removed and then the remaining column names were assigned to the dataset.
+
+The activity values were changed from a number to a factor. Prior to this each individual activity value was assigned one of six descriptive text labels as listed in the activity_labels.txt file. The source data for the activity was from the y_test.txt and y_train.txt files.
+
+
+DataCleaningProjectDataset.txt 
+
+Variables
+
+Field Name		
+activity
+
+Description
+One of the six original activities (1-Walking, 2-Walking Upstairs, 3-Walking Downstairs,4-Sitting, 5-Standing, 6-Laying) from the source data. The original source data listed these activities as numbers and corresponds to the word values as listed previously--1 is now Walking, 2 is now Walking Upstairs, etc. These original values were sourced from the y_test.txt and y_train.txt files.
+
+Field Name
+subject
+
+Description
+Each of the 30 study participants was identified as a number (1 through 30) for all activities.  The subject value listed refers to the study participant for the activity and average provided. The subject values were sourced from the subject_test.txt and subject_train.txt files.
+
+Field Name
+average
+
+Description
+This field is the mean of all of one participant's values for one particular activity. All 30 participants have a value for all six activities. The values from the source data that were averaged are normalized and bounded within [-1,1]. Only the source data columnns including the words 'mean' or 'std' were included in the calculation. 
+
