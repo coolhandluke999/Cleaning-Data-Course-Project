@@ -36,8 +36,7 @@ Description
 Each of the 30 study participants was identified as a number (1 through 30) for all activities.  The subject value listed refers to the study participant for the activity and average provided. The subject values were sourced from the subject_test.txt and subject_train.txt files.
 
 Field Name
-average
+Columns 3:88 are defined in the features_info.txt file with the source data. The values in the tidy dataset are a mean per activity per subject
 
 Description
-This field is the mean of all of one participant's values for one particular activity. All 30 participants have a value for all six activities. The values from the source data that were averaged are normalized and bounded within [-1,1]. Only the source data columnns including the words 'mean' or 'std' were included in the calculation. 
-
+This field is the mean of all of one participant's values for one particular activity. All 30 participants have a value for all six activities for each variable. The values from the source data that were averaged are normalized and bounded within [-1,1]. Only the source data columnns including the words 'mean' or 'std' were included in the calculation. 
